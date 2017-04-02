@@ -1,0 +1,19 @@
+---
+name: QuitLogger
+author:  CONSOLE
+version: 1.0
+api: [2.0.0]
+main: CONSOLE\QuitLogger\Main
+commands:
+  quitlogger:
+    description: "プレイヤーが退出した時の座標取得"
+    aliases: [ql]
+permissions:
+  quitlogger:
+    default: op
+    description: "Allows using the ip things"
+    children:
+      quitlogger.command:
+        default: op
+        description: "Allows using all the ip commands"
+...
